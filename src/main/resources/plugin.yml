@@ -1,0 +1,7 @@
+name: Gangs
+author: xQuickGlare
+version: 1.0
+main: io.alerium.gangs.GangsPlugin
+commands:
+  gang:
+    description: Main command of the plugin

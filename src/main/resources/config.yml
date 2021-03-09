@@ -1,0 +1,66 @@
+mysql:
+  hostname: localhost
+  username: root
+  password: ''
+  port: 3306
+  
+messages:
+  commands:
+    help:
+      - "&aGang commands"
+      - "&a/gang create"
+      - "&a/gang delete"
+      - "&a/gang open"
+      - "&a/gang close"
+      - "&a/gang chat"
+      - "&a/gang join"
+      - "&a/gang accept"
+      - "&a/gang kick"
+      - "&a/gang leave"
+    chat:
+      usage: "&c/gang chat <message>"
+      noGang: "&cYou're not in a gang"
+      format: "&6&lGANG %player%: %message%"
+    close:
+      noGang: "&cYou don't have a gang"
+      done: "&aGang closed"
+    open:
+      noGang: "&cYou don't have a gang"
+      done: "&aGang opened"
+    create:
+      usage: "&c/gang create <name>"
+      alreadyGangMember: "&cYou're already in a gang"
+      alreadyExist: "&cA gang with this name already exist"
+      error: "&cAn error occurred"
+      done: "&aGang created"
+    delete:
+      noGang: "&cYou don't have a gang"
+      error: "&cAn error occurred"
+      done: "&aGang deleted"
+    join:
+      usage: "&c/gang join <name>"
+      alreadyGangMember: "&cYou're already in a gang"
+      notFound: "&cGang not found"
+      notOpen: "&cThis gang is not open"
+      error: "&cAn error occurred"
+      joined: "&aYou joined %gang% gang!"
+      ownerOffline: "&cThe owner of this gang is offline"
+      requested: "&aRequest sent!"
+      request: "&6%player% requested to join your gang"
+    accept:
+      usage: "&c/gang accept <player>"
+      noGang: "&cYou don't have a gang"
+      playerOffline: "&cThis player is offline"
+      noJoinRequested: "&cThis player doesn't want to join this gang"
+      error: "&cAn error occurred"
+      done: "&aPlayer accepted"
+    kick:
+      usage: "&c/gang kick <player>"
+      noGang: "&cYou don't have a gang"
+      playerNotFound: "&cPlayer not found"
+      error: "&cAn error occurred"
+      done: "&aPlayer kicked"
+    leave:
+      noGang: "&cYou're not in a gang"
+      error: "&cAn error occurred"
+      done: "&aGang leaved"
